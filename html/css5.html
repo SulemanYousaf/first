@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .truck{
+            width: 400px;
+            position: absolute;
+            transform: rotate(30deg)scale(0.5);
+            transform: skewX(20deg);
+
+            right: 0px;
+            top: 0px;
+            transition: right 3s linear 0s;
+        } */
+        /* .truck:hover{
+            right: 800px;
+
+        } */
+        @keyframes iAnimation{
+            0%{
+                transform: rotate(0deg);
+                background-color:yellow ;
+            }
+            20%{
+                background-color: tomato;
+            }
+            40%{
+                background-color: turquoise;
+            }
+            60%{
+                background-color: violet;
+            }
+            80%{
+                background-color: orange;
+            }
+            100%{
+                background-color: palegreen;
+                transform: rotate(360deg);
+            }
+
+        }
+        .tank{
+            margin: auto;
+            /* position: absolute; */
+            margin-top: 50px;
+            width:100px;
+            height: 300px;
+            background: blue;
+            animation:iAnimation 2s linear 0s ;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <img src="" alt="">
+    <div class="tank"></div>
+</body>
+</html>

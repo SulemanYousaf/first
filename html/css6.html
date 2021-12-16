@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 100px;
+        }
+        #parent{
+            display: flex;
+        }
+        .box:nth-child(1){
+            background-color: crimson;
+        }
+        .box:nth-child(2){
+            background-color: blue;
+        }
+        .box:nth-child(3){
+            background-color: rgb(139, 168, 10);
+        }
+        .box:nth-child(4){
+            background-color: orange;
+        }
+        @media  screen and (min-width:720px) and (max-width:900px) {
+            .box:nth-child(4){
+            background-color: skyblue;
+        }
+        }
+        @media screen and (min-width:800px){
+            #parent{
+                display: flex;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="box">HOME</div>
+        <div class="box">CONTACT</div>
+        <div class="box">ABOUT</div>
+        <div class="box">BLOG</div>
+    </div>
+</body>
+</html>

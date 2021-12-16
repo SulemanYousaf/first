@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        nav{
+            background: greenyellow;
+        }
+        ol{
+            width: 60%;
+            margin: auto;
+            display: flex;
+            list-style-type: none;
+            color: white;
+        }
+        ol li{
+            flex-grow: 1;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        ol li:hover{
+            background: chocolate;
+        }
+        .child-menu,.grand-child-menu{
+            display: none;
+            position: absolute;
+            background:chocolate ;
+        }
+        .child-menu li{
+            text-align: left;
+        }
+        .drop-menu{
+            position: relative;
+        }
+        .drop-menu:hover .child-menu{
+            display: list-item;
+        }
+        .grand-child-menu{
+            left:130px;
+            padding: 5px;
+        }
+        .child-drop-menu:hover .grand-child-menu{
+            display: list-item;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li>HOME</li>
+            <li class="drop-menu">
+                PROVINCES
+                <ol class="child-menu">
+                    <li class="child-drop-menu">
+                         Punjab
+                        <ol class="grand-child-menu">
+                            <li>Faisalabad</li>
+                            <li>Islamabad</li>
+                            <li>Lahore</li>
+                            <li>Multan</li>
+                        </ol>
+                    </li>
+                    <li> Blochistan</li>
+                    <li> NWEP</li>
+                    <li> Sindh</li>
+                </ol>
+            </li>
+            <li>CONTACT</li>
+            <li>ABOUT</li>
+        </ol>
+    </nav>
+</body>
+</html>
